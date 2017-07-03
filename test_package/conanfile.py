@@ -8,7 +8,7 @@ username = os.getenv("CONAN_USERNAME", "hi3c")
 
 class ExprtkTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "exprtk/5d0dd1b@%s/%s" % (username, channel)
+    requires = "exprtk/5d0dd1b_1@%s/%s" % (username, channel)
     generators = "cmake"
 
     def build(self):

@@ -4,10 +4,9 @@ import os
 
 class ExprtkConan(ConanFile):
     name = "exprtk"
-    version = "5d0dd1b"
+    version = "5d0dd1b_1"
     license = "<Put the package license here>"
     url = "<Package recipe repository url here, for issues about the package>"
-    settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
 
     def source(self):
