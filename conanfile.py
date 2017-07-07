@@ -10,7 +10,7 @@ class ExprtkConan(ConanFile):
     generators = "cmake"
 
     def source(self):
-        tools.download("https://github.com/ArashPartow/exprtk/raw/{}/exprtk.hpp".format(self.version), "exprtk.hpp")
+        tools.download("https://github.com/ArashPartow/exprtk/raw/{}/exprtk.hpp".format(self.version.split("_")[0]), "exprtk.hpp")
 
     def package(self):
         self.copy("*.hpp", dst="include/Exprtk", src=".")
